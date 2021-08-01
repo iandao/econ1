@@ -10,4 +10,9 @@ class Config(object):
         'sqlite:///' + os.path.join(basedir, 'app.db')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     
-    ELASTICSEARCH_URL = os.environ.get('ELASTICSEARCH_URL')
+    # max posts per page
+    POSTS_PER_PAGE = 10
+    
+    
+    
+    # ELASTICSEARCH_URL = os.environ.get('ELASTICSEARCH_URL')
