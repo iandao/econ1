@@ -3,4 +3,9 @@
 {% block content %}
     <h1>EconSearch</h1>
     <h2>Searching through a library of ...</h2>
+    <br>
+    <br>
+    {% for article in articles %}
+        {% include '_post.html' %}
+    {% endfor %}
 {% endblock %}
